@@ -18,7 +18,7 @@ const SocialLogin = () => {
         .then(result =>{
             console.log(result.user)
             toast.success('User logged in successfully');
-            navigate("dashboard")
+            navigate("/dashboard")
         })
         .catch(error => {
             toast.error(error.message)
@@ -33,7 +33,7 @@ const SocialLogin = () => {
         .then(result => {
             console.log(result.user)
             toast.success('User logged in successfully');
-            navigate("dashboard")
+            navigate("/dashboard")
         })
         .catch(error => {
             toast.error(error.message)
