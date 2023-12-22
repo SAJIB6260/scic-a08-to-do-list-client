@@ -1,7 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 import { Link } from "react-router-dom";
 import useAuth from "../../../hooks/useAuth";
-import { FaFileDownload } from "react-icons/fa";
 import { motion } from "framer-motion"
 
 const Banner = () => {
