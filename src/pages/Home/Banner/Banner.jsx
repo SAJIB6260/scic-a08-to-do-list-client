@@ -1,6 +1,8 @@
 /* eslint-disable react/no-unescaped-entities */
 import { Link } from "react-router-dom";
 import useAuth from "../../../hooks/useAuth";
+import { FaFileDownload } from "react-icons/fa";
+import { motion } from "framer-motion"
 
 const Banner = () => {
     const { user } = useAuth();
@@ -24,12 +26,35 @@ const Banner = () => {
             to-do list into a plan for success
           </p>
           
-          {
+         <div className="w-full flex justify-center">
+         {
             user?.email ? 
-            <Link to='/dashboard' className="btn btn-primary bg-violet-700 hover:text-[105%] ">Let’s Explore</Link> 
+            <Link to='/dashboard'>
+                                            <motion.button
+                                whileHover={{ scale: 1.10 }}
+                                whileTap={{ scale: 0.85, rotate: "-2.5deg" }}
+                                transition={{
+                                    duration: 0.125,
+                                    ease: "easeInOut"
+                                }}
+                                className="py-3 mt-2 w-[10rem] rounded-xl text-white bg-gradient-to-b from-violet-300 to-violet-900 flex justify-center border-2 border-white">
+                                 Let’s Explore
+                            </motion.button>
+                </Link> 
             :
-            <Link to='/login' className="btn btn-primary bg-violet-700 hover:text-[105%] ">Let’s Explore</Link>
+            
+            <motion.button
+                                whileHover={{ scale: 1.10 }}
+                                whileTap={{ scale: 0.85, rotate: "-2.5deg" }}
+                                transition={{
+                                    duration: 0.125,
+                                    ease: "easeInOut"
+                                }}
+                                className="py-3 mt-2 w-[10rem] rounded-xl  text-white bg-gradient-to-b from-violet-300 to-violet-900 flex justify-center border-2 border-white">
+                                 <Link to='/login'>Let’s Explore</Link>
+                            </motion.button>
           }
+         </div>
         </div>
       </div>
     </div>
