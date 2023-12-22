@@ -17,7 +17,7 @@ const NavBar = () => {
                         <label tabIndex={0} className="btn btn-ghost p-2 lg:hidden">
                             <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-[#16CAC9]" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
                         </label>
-                        <ul tabIndex={0} className="menu-sm dropdown-content mt-[14px] z-[2] rounded-box p-2 shadow bg-neutral-content bg-opacity-80 w-[500%]">
+                        <ul tabIndex={0} className="menu-sm dropdown-content mt-[14px] z-[2] rounded-box p-2 shadow bg-white bg-opacity-80 w-[500%]">
                             <li>
                                 <NavLink
                                     className={({ isActive }) =>

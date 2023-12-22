@@ -7,10 +7,10 @@ import Home from "../pages/Home/Home/Home";
 import Login from "../pages/Login/Login";
 import Registation from "../pages/Registation/Registation";
 import Dashboard from "../Layouts/Dashboard";
-import DashboardHome from "../pages/Dashboard/DashBoardHome/DashboardHome";
 import AboutUs from "../pages/AboutUs/AboutUs";
 import Contact from "../pages/Contact/Contact";
 import CreateToDo from "../pages/Dashboard/CreateToDo/CreateToDo";
+import MyToDoList from "../pages/Dashboard/MyToDoList/MyToDoList";
 
 
 
@@ -51,11 +51,11 @@ export const router = createBrowserRouter([
         children: [
             {
                 index: true,
-                element: <DashboardHome></DashboardHome>            
+                element: <CreateToDo></CreateToDo>            
               },
             {
-                path: "createtodo",
-                element: <CreateToDo></CreateToDo>            
+                path: "mytodo",
+                element: <MyToDoList></MyToDoList>            
               },
         ]
     }

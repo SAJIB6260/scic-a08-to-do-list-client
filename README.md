@@ -1,8 +1,22 @@
-# React + Vite
+### ToDoList
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+#### Live link : https://to-do-list-project-scic.netlify.app/
 
-Currently, two official plugins are available:
+###### Features
+- User can add new To-do, delete them and update them if they want.
+- Log in users can add To-do , And visite all routs.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+###### Use Technology
+- HTML
+- CSS
+- Javascript
+- React
+- Tailwind css
+- DaisyUI
+- Firebase
+- Tunstak Quary
+- Express JS
+- Node JS
+- MongoDB
+

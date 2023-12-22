@@ -8,8 +8,9 @@ import { FcHome } from 'react-icons/fc'
 import { AiOutlineBars } from 'react-icons/ai'
 
 import { useNavigate } from 'react-router-dom'
-import { CgProfile } from "react-icons/cg";
+import { CgAdd} from "react-icons/cg";
 import useAuth from '../../hooks/useAuth'
+import { ImBooks } from "react-icons/im";
 
 
 
@@ -65,9 +66,14 @@ const Sidebar = () => {
                         {/* If a user is host */}
                         <nav>
                             <MenuItem
-                                icon={CgProfile}
-                                label='Admin Profile'
+                                icon={CgAdd}
+                                label='Create ToDo'
                                 address='/dashboard'
+                            />
+                            <MenuItem
+                                icon={ImBooks}
+                                label='My ToDo'
+                                address='mytodo'
                             />
 
                         </nav>
